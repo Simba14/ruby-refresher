@@ -160,6 +160,8 @@ end
 # take out all the capital letters from a string
 # so 'Hello JohnDoe' becomes 'ello ohnoe'
 def remove_capital_letters_from_string(string)
+  regex = /[A-Z]/
+  string.split("").reject{ |x| regex.match(x) }.join
 end
 
 # round up a float up and convert it to an Integer,
