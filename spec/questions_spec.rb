@@ -156,7 +156,7 @@ describe 'the Friday test :)' do
     expect(n).to eq '31/10/2013'
   end
 
-  it 'get_domain_name_from_email_address' do
+  fit 'get_domain_name_from_email_address' do
     n = get_domain_name_from_email_address 'alex@makersacademy.com'
     expect(n).to eq 'makersacademy'
   end
@@ -194,7 +194,7 @@ describe 'the Friday test :)' do
     expect(b).to eq 1.7320508075688772
   end
 
-  fit 'word_count_a_file' do
+  it 'word_count_a_file' do
     n = word_count_a_file 'data/lorem.txt'
     expect(n).to eq 70
   end
