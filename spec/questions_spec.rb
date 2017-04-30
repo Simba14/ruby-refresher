@@ -166,7 +166,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 'The Lion the Witch and the Wardrobe'
   end
 
-  fit 'check_a_string_for_special_characters' do
+  it 'check_a_string_for_special_characters' do
     a = check_a_string_for_special_characters 'ABCdef123'
     b = check_a_string_for_special_characters 'ABC@def123!'
 
@@ -199,7 +199,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 70
   end
 
-  it 'call_method_from_string' do
+  fit 'call_method_from_string' do
     expect { call_method_from_string('foobar') }.to raise_error(NameError)
   end
 

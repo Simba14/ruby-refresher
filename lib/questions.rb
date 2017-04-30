@@ -202,7 +202,7 @@ end
 # where 'special character' means anything apart from the letters
 # a-z (uppercase and lower) or numbers
 def check_a_string_for_special_characters(string)
-  string =~ /\W/ ? true : false 
+  string =~ /\W/ ? true : false
 end
 
 # get the upper limit of a range. e.g. for the range 1..20, you
@@ -234,6 +234,7 @@ end
 # called call_method_from_string('foobar')
 # the method foobar should be invoked
 def call_method_from_string(str_method)
+  str_method.send('invoked innit')
 end
 
 # return true if the date is a uk bank holiday for 2014
