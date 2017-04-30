@@ -1,9 +1,30 @@
-## Ruby Refresher
+# Ruby Refresher
 
 A Ruby refresher containing 41 questions of varying difficulty.
+Each question follows the same format: a set of instructions, an empty method for population, and a test.
+
+I have extracted two of the questions below to give an indication of the questions' range of difficulty.
+
+Easier:
+> Don't reverse the array, but reverse every word inside it. e.g. ['dog', 'monkey'] becomes ['god', 'yeknom']
+
+Harder:
+> In a file, total the number of times words of different lengths appear. So in a file with the text "the cat sat on the blue mat" I have 5 words which are 3 letters long, 1 which is 2 letters long and 1 that is 4 letters long. Return it as a hash in the format word_length => count, e.g. {2 => 1, 3 => 5, 4 => 1
+
+Skills Sharpened
+----
+* Ability to read and understand Ruby documentation
+* Expanded my knowledge of the methods that can be applied to both strings and arrays.
+* Now comfortable with using regex for simple to intermediate pattern searches
+* Breaking down complex problems into smaller chunks
+
+
+Tests
+----
+All tests are contained in the questions_spec.rb found in the spec directory.
+Instructions on how to run the tests can be found below.
 
 To run the specs, just run
-
 ~~~
 $ rspec questions_spec.rb
 ~~~
@@ -14,7 +35,6 @@ $ rspec questions_spec.rb
 $ rspec spec/questions_spec.rb --tag focus
 ~~~
 
-Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolidating the stuff we've covered in JS :smile:
 
 ### Tips
 
